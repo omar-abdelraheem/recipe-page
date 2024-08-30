@@ -6,30 +6,29 @@
 
 @font-face {
   font-family: young-serif;
-  src: url(./assets/fonts/young-serif/);
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
 @font-face {
   font-family: Outfit;
   src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
-li {
-  /* list-style: none; */
-}
+
 body {
   background-color: hsl(30, 54%, 90%);
+  height: 1700px;
 }
-h1 {
-  background-color: white;
-}
+
 section {
   width: 700px;
-  position: absolute;
-  top: 700px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
+  margin-top: 150px;
   background-color: white;
-  padding: 30px 70px;
+  padding: 30px 50px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
 }
 section img {
   width: 100%;
@@ -39,6 +38,7 @@ section img {
 section h1 {
   font-family: young-serif;
   font-size: 2.5rem;
+  color: hsl(24, 5%, 18%);
 }
 
 section .recipe-info {
@@ -46,12 +46,19 @@ section .recipe-info {
   color: hsl(30, 10%, 34%);
   font-size: 0.9rem;
 }
+section .prep-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px 35px;
+  border-radius: 10px;
+}
 
 section .prep-time h2,
 section .ingredians h2,
-section .instructions h2 {
+section .instructions h2,
+section .instructions h2,
+section .Nutrition h2 {
   color: hsl(332, 51%, 32%);
-  font-family: Outfit;
+  font-family: young-serif;
   margin-bottom: 20px;
   font-size: 1.2rem;
 }
@@ -61,6 +68,7 @@ section .instructions ol {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-left: 22px;
 }
 section .prep-time li,
 section .ingredians li,
@@ -68,7 +76,6 @@ section .instructions li {
   font-family: Outfit;
   color: hsl(30, 10%, 34%);
   padding-left: 10px;
-  padding-left: 15px;
 }
 
 .prep-time li::marker,
@@ -77,4 +84,25 @@ section .instructions li {
   color: hsl(332, 51%, 32%);
   font-family: Outfit;
   font-size: 1.2rem;
+}
+
+.Nutrition p {
+  color: hsl(30, 10%, 34%);
+  font-family: Outfit;
+  margin-bottom: 20px;
+}
+.table div {
+  margin: 10px 0px;
+  font: 0.8em Outfit;
+  font-weight: bold;
+  width: 46%;
+  display: inline-block;
+}
+
+.table .LT {
+  color: hsl(30, 10%, 34%);
+  margin-left: 10px;
+}
+.table .RT {
+  color: hsl(332, 51%, 32%);
 }
