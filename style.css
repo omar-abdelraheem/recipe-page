@@ -106,3 +106,9 @@ section .instructions li {
 .table .RT {
   color: hsl(332, 51%, 32%);
 }
+
+@media screen and (max-width: 400px) {
+  section {
+    width: 100%;
+  }
+}
